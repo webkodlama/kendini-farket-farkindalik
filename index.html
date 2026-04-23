@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hayat - Farkındalık ve mindfulness ile iç huzur bulun. Günlük meditasyon, nefes egzersizleri ve bilinçli yaşam rehberi.">
+    <meta name="keywords" content="farkındalık, mindfulness, meditasyon, iç huzur, nefes egzersizleri, bilinçli yaşam, stres yönetimi, an'da kalma">
+    <meta name="author" content="Hayat Farkındalık">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hayatfarkindalik.com">
+    <meta property="og:title" content="Hayat - Farkındalık ve İç Huzur">
+    <meta property="og:description" content="Farkındalık ve mindfulness ile iç huzur bulun. Günlük meditasyon ve bilinçli yaşam rehberi.">
+    <meta property="og:image" content="./images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hayatfarkindalik.com">
+    <meta property="twitter:title" content="Hayat - Farkındalık ve İç Huzur">
+    <meta property="twitter:description" content="Farkındalık ve mindfulness ile iç huzur bulun. Günlük meditasyon ve bilinçli yaşam rehberi.">
+    <meta property="twitter:image" content="./images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+    
+    <title>Hayat - Farkındalık ve İç Huzur | Mindfulness Rehberi</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading">
+        <div class="loading-content">
+            <div class="breathing-circle"></div>
+            <p class="loading-text">Nefes al...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🌿</span>
+                <span class="logo-text">Hayat</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü Aç/Kapat">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#anasayfa" class="nav-link active">Anasayfa</a></li>
+                <li><a href="#nedir" class="nav-link">Farkındalık Nedir?</a></li>
+                <li><a href="#faydalar" class="nav-link">Faydalar</a></li>
+                <li><a href="#teknikler" class="nav-link">Teknikler</a></li>
+                <li><a href="#basla" class="nav-link nav-cta">Başla</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="anasayfa">
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <span>✨</span> İç huzura yolculuk başlıyor
+            </div>
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="title-line">An'da Kal,</span>
+                <span class="title-line highlight">Hayatı Hisset</span>
+            </h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="100">
+                Farkındalık, koşullar ne olursa olsun iç huzuru bulma sanatıdır. 
+                Basit nefes teknikleri ve mindfulness pratikleriyle stresini azalt, 
+                odaklanmanı artır ve yaşamının her anının tadını çıkar.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                <a href="#basla" class="btn btn-primary">
+                    <span>🧘</span> Yolculuğa Başla
+                </a>
+                <a href="#nedir" class="btn btn-secondary">
+                    <span>📖</span> Daha Fazla Bilgi
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10000">0</span>
+                    <span class="stat-label">Mutlu Üye</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Medasyon</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label">Memnuniyet %</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Aşağı kaydır</p>
+        </div>
+    </section>
+
+    <!-- What is Mindfulness Section -->
+    <section class="section section-light" id="nedir">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">🌸</span>
+                <h2 class="section-title">Farkındalık Nedir?</h2>
+                <p class="section-subtitle">
+                    Farkındalık, şu anki ana dikkatini vererek yaşamaktır. Geçmişte takılı kalmadan 
+                    veya gelecek için endişelenmeden, sadece "şimdi"yi deneyimlemektir.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <span>🧠</span>
+                    </div>
+                    <h3>Bilinçli Farkındalık</h3>
+                    <p>Düşüncelerinin, duygularının ve bedeninin farkında olmak. 
+                    Onları yargılamadan sadece gözlemlemek.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <span>🌊</span>
+                    </div>
+                    <h3>An'da Kalma</h3>
+                    <p>Zihnin sürekli geçmişe veya geleceğe kaymasını fark edip, 
+                    nazikçe şu anki ana geri dönmek.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <span>💚</span>
+                    </div>
+                    <h3>Şefkatli Yaklaşım</h3>
+                    <p>Kendine ve başkalarına karşı nazik ve anlayışlı olmak. 
+                    Mükemmellikten ziyade kabul.</p>
+                </div>
+            </div>
+
+            <div class="quote-section" data-aos="fade-up">
+                <blockquote>
+                    "Farkındalık, yaşadığımız her anı daha derin, daha bilinçli ve daha anlamlı hale getirmenin anahtarıdır."
+                </blockquote>
+                <cite>— Thich Nhat Hanh</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section section-gradient" id="faydalar">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">✨</span>
+                <h2 class="section-title">Farkındalığın Faydaları</h2>
+                <p class="section-subtitle">
+                    Bilimsel araştırmalar, düzenli farkındalık pratiğinin zihinsel ve fiziksel 
+                    sağlık üzerinde sayısız olumlu etkisi olduğunu gösteriyor.
+                </p>
+            </div>
+
+            <div class="benefits-wrapper">
+                <div class="benefits-list">
+                    <div class="benefit-item" data-aos="fade-right">
+                        <div class="benefit-icon">🧘‍♀️</div>
+                        <div class="benefit-content">
+                            <h3>Stres ve Anksiyeteyi Azaltır</h3>
+                            <p>Nefes teknikleri ve meditasyon, stres hormonu kortizol seviyelerini düşürerek 
+                            iç huzur sağlar. Günde sadece 10 dakika pratik bile fark yaratır.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="benefit-icon">🎯</div>
+                        <div class="benefit-content">
+                            <h3>Odaklanmayı Güçlendirir</h3>
+                            <p>Dikkat dağınıklığını azaltır, konsantrasyonu artırır. 
+                            İş hayatında ve özel hayatında daha verimli olmanı sağlar.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="benefit-icon">😴</div>
+                        <div class="benefit-content">
+                            <h3>Uyku Kalitesini İyileştirir</h3>
+                            <p>Rahatlama teknikleri, uykuya dalma süresini kısaltır ve 
+                            derin uyku kalitesini artırır. Sabah dinç uyanırsın.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="benefit-icon">❤️</div>
+                        <div class="benefit-content">
+                            <h3>Duygusal Denge Sağlar</h3>
+                            <p>Duygularını daha iyi tanır ve yönetirsin. 
+                            Öfke, kaygı ve üzüntüyü daha sağlıklı şekilde işlersin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual" data-aos="fade-left">
+                    <div class="breathing-guide">
+                        <div class="breath-circle">
+                            <div class="breath-inner">
+                                <span class="breath-text">Nefes Al</span>
+                                <span class="breath-timer">4</span>
+                            </div>
+                        </div>
+                        <p class="breath-instruction">Daire ile birlikte nefes alıp ver</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Techniques Section -->
+    <section class="section section-light" id="teknikler">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">🌿</span>
+                <h2 class="section-title">Başlangıç Teknikleri</h2>
+                <p class="section-subtitle">
+                    Hemen bugün uygulayabileceğin basit ama etkili farkındalık teknikleri. 
+                    Hiçbir özel ekipmana ihtiyacın yok, sadece birkaç dakikan yeter.
+                </p>
+            </div>
+
+            <div class="techniques-grid">
+                <div class="technique-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="technique-header">
+                        <span class="technique-number">01</span>
+                        <span class="technique-duration">3 dk</span>
+                    </div>
+                    <div class="technique-body">
+                        <h3>4-7-8 Nefes Tekniği</h3>
+                        <p>4 saniye nefes al, 7 saniz tut, 8 saniye ver. Bu teknik sinir sistemini 
+                        sakinleştirir ve anında rahatlama sağlar.</p>
+                        <ul class="technique-steps">
+                            <li>Ağzını kapat, burnundan 4 saniye nefes al</li>
+                            <li>Nefesini 7 saniye boyunca tut</li>
+                            <li>Ağzından 8 saniyede tamamen ver</li>
+                            <li>4 döngü tekrarla</li>
+                        </ul>
+                    </div>
+                    <button class="technique-btn" onclick="startBreathing('478')">
+                        <span>▶</span> Pratik Yap
+                    </button>
+                </div>
+
+                <div class="technique-card featured" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="technique-badge">En Popüler</div>
+                    <div class="technique-header">
+                        <span class="technique-number">02</span>
+                        <span class="technique-duration">5 dk</span>
+                    </div>
+                    <div class="technique-body">
+                        <h3>Beden Taraması</h3>
+                        <p>Bedeninin her bölgesine dikkatini vererek kasları gevşet ve 
+                        stres birikimlerini serbest bırak.</p>
+                        <ul class="technique-steps">
+                            <li>Sırt üstü yat veya rahat otur</li>
+                            <li>Ayak parmaklarından başlayarak yukarı çık</li>
+                            <li>Her bölgeye 30 saniye odaklan</li>
+                            <li>Gerginlikleri fark et ve bırak</li>
+                        </ul>
+                    </div>
+                    <button class="technique-btn" onclick="startBodyScan()">
+                        <span>▶</span> Pratik Yap
+                    </button>
+                </div>
+
+                <div class="technique-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="technique-header">
+                        <span class="technique-number">03</span>
+                        <span class="technique-duration">2 dk</span>
+                    </div>
+                    <div class="technique-body">
+                        <h3>5-4-3-2-1 Duyu Tekniği</h3>
+                        <p>Anksiyete anında zihnini sakinleştirmek için 5 duyunu kullan. 
+                        Bu teknik panik atakları durdurmada çok etkilidir.</p>
+                        <ul class="technique-steps">
+                            <li>5 şey gör (gözlerinle keşfet)</li>
+                            <li>4 şey dokun (hisset)</li>
+                            <li>3 şey duy (kulak ver)</li>
+                            <li>2 şey kokla, 1 şey tat</li>
+                        </ul>
+                    </div>
+                    <button class="technique-btn" onclick="startSenseTechnique()">
+                        <span>▶</span> Pratik Yap
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meditation Timer Section -->
+    <section class="section section-dark" id="basla">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">🧘</span>
+                <h2 class="section-title">Hemen Başla</h2>
+                <p class="section-subtitle">
+                    Aşağıdaki meditasyon zamanlayıcısını kullanarak ilk pratiğini yap. 
+                    Sessiz bir yer bul, rahatla ve nefesine odaklan.
+                </p>
+            </div>
+
+            <div class="meditation-app" data-aos="zoom-in">
+                <div class="timer-container">
+                    <div class="timer-circle">
+                        <svg class="timer-svg" viewBox="0 0 100 100">
+                            <circle class="timer-track" cx="50" cy="50" r="45"/>
+                            <circle class="timer-progress" cx="50" cy="50" r="45"/>
+                        </svg>
+                        <div class="timer-display">
+                            <span class="timer-time" id="timerTime">05:00</span>
+                            <span class="timer-label" id="timerLabel">Hazır</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timer-controls">
+                    <div class="time-presets">
+                        <button class="preset-btn" data-time="3">3 dk</button>
+                        <button class="preset-btn active" data-time="5">5 dk</button>
+                        <button class="preset-btn" data-time="10">10 dk</button>
+                        <button class="preset-btn" data-time="20">20 dk</button>
+                    </div>
+                    <div class="main-controls">
+                        <button class="control-btn" id="resetBtn">
+                            <span>↺</span>
+                        </button>
+                        <button class="control-btn play-btn" id="playBtn">
+                            <span>▶</span>
+                        </button>
+                        <button class="control-btn sound-btn" id="soundBtn">
+                            <span>🔔</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="meditation-tips" id="meditationTips">
+                    <p>💡 <strong>İpucu:</strong> Sırtını dik tut, omuzlarını gevşet. Nefesinin doğal akışını izle, 
+                    onu değiştirmeye çalışma. Zihnin dalarsa, nazikçe nefesine geri dön.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">💬</span>
+                <h2 class="section-title">Başarı Hikayeleri</h2>
+                <p class="section-subtitle">
+                    Farkındalık pratiği yaşamlarını değiştiren binlerce kişiden bazılarının hikayeleri.
+                </p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "İş stresiyle başa çıkamıyordum. 3 aylık farkındalık pratiği sonrası 
+                            hem iş hayatımda hem özel hayatımda çok daha dengeliyim."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Ayşe Yılmaz</h4>
+                                <span>Marka Müdürü</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "Uyku problemim vardı. Beden taraması tekniğini her gece uyguluyorum 
+                            ve artık 15 dakikada uyuyakalıyorum. Hayat kurtarıcı!"
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Mehmet Kaya</h4>
+                                <span>Yazılım Geliştirici</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">
+                            "Panik ataklarım vardı. 5-4-3-2-1 tekniği sayesinde artık 
+                            ataklarımı kontrol edebiliyorum. Çok basit ama çok etkili."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Selin Demir</h4>
+                                <span>Öğretmen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-nav-btn" id="prevTestimonial">‹</button>
+                    <button class="testimonial-nav-btn" id="nextTestimonial">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Bugün Değişime Başla</h2>
+                <p>
+                    Farkındalık bir hedef değil, bir yolculuktur. Her nefeste yeni bir başlangıç vardır. 
+                    Şimdi en iyi zaman. 🌱
+                </p>
+                <div class="cta-buttons">
+                    <a href="#basla" class="btn btn-white">
+                        <span>🧘‍♂️</span> İlk Meditasyonunu Yap
+                    </a>
+                </div>
+                <div class="cta-features">
+                    <span>✓ Ücretsiz</span>
+                    <span>✓ Kayıt Gerekmez</span>
+                    <span>✓ Her Zaman Erişim</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🌿</span>
+                        <span class="logo-text">Hayat</span>
+                    </a>
+                    <p>
+                        Farkındalık ve mindfulness ile daha bilinçli, huzurlu ve dengeli 
+                        bir yaşam için rehberiniz.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#nedir">Farkındalık Nedir?</a></li>
+                        <li><a href="#faydalar">Faydalar</a></li>
+                        <li><a href="#teknikler">Teknikler</a></li>
+                        <li><a href="#basla">Meditasyon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kaynaklar</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">E-Kitaplar</a></li>
+                        <li><a href="#">Rehberler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Günlük İlham</h4>
+                    <p>Her sabah farkındalık ipuçları al.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="E-posta adresin" required>
+                        <button type="submit">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hayat Farkındalık. Tüm hakları saklıdır.</p>
+                <div class="footer-legal">
+                    <a href="#">Gizlilik</a>
+                    <a href="#">Kullanım Koşulları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Breathing Modal -->
+    <div class="modal" id="breathingModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeBreathingModal">&times;</button>
+            <div class="breathing-exercise">
+                <div class="breathing-visual">
+                    <div class="breath-orb" id="breathOrb"></div>
+                    <div class="breath-ripples">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="breathing-text" id="breathingText">Hazır...</div>
+                <div class="breathing-timer" id="breathingTimer">4</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
